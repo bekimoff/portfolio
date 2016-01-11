@@ -1,0 +1,35 @@
+.tile {
+    width: 17vw;
+    height: 17vw;
+    margin: 5px;
+    background-color: #FEFFED;
+    border-radius: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 7px #A83B4E solid;
+    color: #000;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.tile--header {
+    margin: 50px auto;
+    display: block;
+    border: 0px;
+    background-image: url(http://lorempixel.com/200/200/city);
+}
+
+@media (min-width: 1050px) {
+    .tile--header {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tile--header {
+        width: calc(0.17 * 565px);
+        height: calc(0.17 * 565px);
+    }
+
+}

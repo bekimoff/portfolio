@@ -1,0 +1,44 @@
+nav {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    height: 10vh;
+    z-index: 100;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a {
+    font-size: 20px;
+    color: #aaa;
+    display: block;
+    line-height: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #FEFFED;
+}
+
+.before {
+    background-color: transparent;
+}
+
+.after {
+    background-color: #A83B4E;
+}
+
+

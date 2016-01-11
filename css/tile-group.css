@@ -1,0 +1,49 @@
+.tile-group:nth-child(odd) .tile:nth-child(even) {
+    border: 7px darkcyan solid;
+}
+
+.tile-group:nth-child(odd) .tile:nth-child(odd) {
+    background-color: #A83B4E;
+}
+
+.tile-group:nth-child(odd) .tile:first-child {
+    visibility: hidden;
+}
+
+.tile-group:nth-child(even) .tile:nth-child(odd) {
+    border: 7px darkcyan solid;
+}
+
+.tile-group:nth-child(even) .tile:nth-child(even) {
+    background-color: #A83B4E;
+}
+
+.tile-group:nth-child(even) .tile:last-child {
+    visibility: hidden;
+}
+
+@media (min-width: 1050px) {
+    .tile-group {
+        width: 1050px;
+        margin: 0 auto;
+    }
+
+    .tile-group .tile {
+        width: 180px;
+        height: 180px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tile-group {
+        width: 565px;
+        margin: 0 auto;
+    }
+
+    .tile-group .tile {
+        width: 17%;
+        height: calc(0.17 * 565px);
+        margin: 5px;
+    }
+}
