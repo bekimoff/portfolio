@@ -6,17 +6,23 @@
     border-radius: 25%;
     display: inline-block;
     vertical-align: middle;
-    border: 7px #A83B4E solid;
-    color: #000;
+    border: 7px #C1C592 solid;
+    color: #FEFFED;
     padding: 30px;
     box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-size: 20pt;
+    position: relative;
 }
 
 .tile--header {
     margin: 50px auto;
+    padding: 0px;
     display: block;
-    border: 0px;
-    background-image: url(http://lorempixel.com/200/200/city);
+    background: url(http://lorempixel.com/200/200/city);
+    position: relative;
 }
 
 @media (min-width: 1050px) {
@@ -32,4 +38,84 @@
         height: calc(0.17 * 565px);
     }
 
+}
+
+.tile--github {
+    background-image: url(../assets/githubavatarg.png);
+}
+
+.tile--github:hover {
+    background-image: url(../assets/githubavatar.png);
+}
+
+.tile--gopher {
+    background-image: url(../assets/donutGopher.png);
+}
+
+.tile--gopher:hover {
+    background-image: url(../assets/gopherc.png);
+}
+
+.tile--cat3 {
+    background-image: url(http://lorempixel.com/g/200/200/cats/3);
+}
+
+.tile--cat3:hover {
+    background-image: url(http://lorempixel.com/200/200/cats/3);
+}
+
+.tile--cat4 {
+    background-image: url(http://lorempixel.com/g/200/200/cats/4);
+}
+
+.tile--cat4:hover {
+    background-image: url(http://lorempixel.com/200/200/cats/4);
+}
+
+.tile--cat5 {
+    background-image: url(http://lorempixel.com/g/200/200/cats/5);
+}
+
+.tile--cat5:hover {
+    background-image: url(http://lorempixel.com/200/200/cats/5);
+}
+
+.tile--cat6 {
+    background-image: url(http://lorempixel.com/g/200/200/cats/6);
+}
+
+.tile--cat6:hover {
+    background-image: url(http://lorempixel.com/200/200/cats/6);
+}
+
+.tile--cat7 {
+    background-image: url(http://lorempixel.com/g/200/200/cats/7);
+}
+
+.tile--cat7:hover {
+    background-image: url(http://lorempixel.com/200/200/cats/7);
+}
+
+.tile--cat8 {
+    background-image: url(http://lorempixel.com/g/200/200/cats/8);
+}
+
+.tile--cat8:hover {
+    background-image: url(http://lorempixel.com/200/200/cats/8);
+}
+
+.tile--cat9 {
+    background-image: url(http://lorempixel.com/g/200/200/cats/9);
+}
+
+.tile--cat9:hover {
+    background-image: url(http://lorempixel.com/200/200/cats/9);
+}
+
+.tile--cat10 {
+    background-image: url(http://lorempixel.com/g/200/200/cats/10);
+}
+
+.tile--cat10:hover {
+    background-image: url(http://lorempixel.com/200/200/cats/10);
 }

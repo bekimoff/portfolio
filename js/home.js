@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if ($(window).scrollTop() >= 500) {
+    if ($(window).scrollTop() >= 510) {
         $('nav').removeClass('before');
         $('nav').addClass('after');
 

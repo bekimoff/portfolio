@@ -1,9 +1,9 @@
 .tile-group:nth-child(odd) .tile:nth-child(even) {
-    border: 7px darkcyan solid;
+    border: 7px #20685C solid;
 }
 
 .tile-group:nth-child(odd) .tile:nth-child(odd) {
-    background-color: #A83B4E;
+    background-color: #6B0E20;
 }
 
 .tile-group:nth-child(odd) .tile:first-child {
@@ -11,11 +11,11 @@
 }
 
 .tile-group:nth-child(even) .tile:nth-child(odd) {
-    border: 7px darkcyan solid;
+    border: 7px #20685C solid;
 }
 
 .tile-group:nth-child(even) .tile:nth-child(even) {
-    background-color: #A83B4E;
+    background-color: #6B0E20;
 }
 
 .tile-group:nth-child(even) .tile:last-child {
