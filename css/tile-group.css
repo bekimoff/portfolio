@@ -1,24 +1,24 @@
-.tile-group:nth-child(odd) .tile:nth-child(even) {
+.tile-group:nth-of-type(odd) .tile:nth-of-type(odd) {
     border: 7px #67736E solid;
 }
 
-.tile-group:nth-child(odd) .tile:nth-child(odd) {
+.tile-group:nth-of-type(odd) .tile:nth-of-type(even) {
     background-color: #67736E;
 }
 
-.tile-group:nth-child(odd) .tile:first-child {
+.tile-group:nth-of-type(odd) .tile:last-of-type {
     visibility: hidden;
 }
 
-.tile-group:nth-child(even) .tile:nth-child(odd) {
+.tile-group:nth-of-type(even) .tile:nth-of-type(even) {
     border: 7px #67736E solid;
 }
 
-.tile-group:nth-child(even) .tile:nth-child(even) {
+.tile-group:nth-of-type(even) .tile:nth-of-type(odd) {
     background-color: #67736E;
 }
 
-.tile-group:nth-child(even) .tile:last-child {
+.tile-group:nth-of-type(even) .tile:first-of-type {
     visibility: hidden;
 }
 
