@@ -1,0 +1,287 @@
+nav {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  height: 60px;
+  z-index: 100;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+nav > ul {
+  margin: 0;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav > ul > li > a {
+  font-size: 20px;
+  color: #458FB3;
+  display: block;
+  line-height: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+nav.before a:hover {
+  background-color: #FFFFFF;
+}
+nav.after a:hover {
+  background-color: #143748;
+}
+nav.before {
+  background-color: transparent;
+}
+nav.after {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 60px rgba(10, 14, 13, 0.75);
+}
+nav .headline {
+  position: absolute;
+  margin-top: 10px;
+  left: 5px;
+  font-size: 30px;
+  font-family: 'Brusher', sans-serif;
+}
+nav.before .headline {
+  color: transparent;
+}
+nav.after .headline {
+  color: #458FB3;
+}
+
+.box {
+  border-top: 20px solid #458FB3;
+  border-bottom: 20px solid #458FB3;
+  background-color: #DFDFDF;
+  height: 90vh;
+  width: 100vw;
+  margin: 200px 0px;
+  box-sizing: border-box;
+  color: #DE365A;
+  text-align: left;
+  position: relative;
+  box-shadow: 0px 2px 20px rgba(10, 14, 13, 0.75);
+}
+.box::before {
+  width: 100%;
+  height: calc(100% - 20px);
+  display: block;
+  border-top: 10px solid #143748;
+  border-bottom: 10px solid #143748;
+  content: " ";
+}
+.box__personal-statement {
+  padding: 10px 20px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  text-align: left;
+  font-weight: 400;
+  color: #143748;
+  position: absolute;
+  top: 0;
+}
+
+.tile {
+  width: 17vw;
+  height: 17vw;
+  margin: 5px;
+  background-color: #EEE;
+  border-radius: 25%;
+  display: inline-block;
+  vertical-align: middle;
+  border: 7px #143748 solid;
+  color: #458FB3;
+  padding: 30px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-size: 15pt;
+  box-shadow: 0px 2px 10px rgba(10, 14, 13, 0.75);
+  overflow: hidden;
+}
+.tile--github {
+  background-image: url(../assets/githubavatarg.png);
+}
+.tile--github:hover {
+  background-image: url(../assets/githubavatar.png);
+}
+.tile--gopher {
+  background-image: url(../assets/donutGopher.png);
+}
+.tile--gopher:hover {
+  background-image: url(../assets/gopherc.png);
+}
+.tile--westminster {
+  background-image: url(../assets/Westminster_College_Logog.png);
+}
+.tile--westminster:hover {
+  background-image: url(../assets/Westminster_College_Logo.png);
+}
+.tile--marquette {
+  background-image: url(../assets/newmarquettead_fullsize_story1g.jpg);
+}
+.tile--marquette:hover {
+  background-image: url(../assets/newmarquettead_fullsize_story1.jpg);
+}
+.tile--cat5 {
+  background-image: url(http://lorempixel.com/g/200/200/cats/5);
+}
+.tile--cat5:hover {
+  background-image: url(http://lorempixel.com/200/200/cats/5);
+}
+.tile--cat6 {
+  background-image: url(http://lorempixel.com/g/200/200/cats/6);
+}
+.tile--cat6:hover {
+  background-image: url(http://lorempixel.com/200/200/cats/6);
+}
+.tile--cat7 {
+  background-image: url(http://lorempixel.com/g/200/200/cats/7);
+}
+.tile--cat7:hover {
+  background-image: url(http://lorempixel.com/200/200/cats/7);
+}
+.tile--cat8 {
+  background-image: url(http://lorempixel.com/g/200/200/cats/8);
+}
+.tile--cat8:hover {
+  background-image: url(http://lorempixel.com/200/200/cats/8);
+}
+.tile--cat9 {
+  background-image: url(http://lorempixel.com/g/200/200/cats/9);
+}
+.tile--cat9:hover {
+  background-image: url(http://lorempixel.com/200/200/cats/9);
+}
+.tile--cat10 {
+  background-image: url(http://lorempixel.com/g/200/200/cats/10);
+}
+.tile--cat10:hover {
+  background-image: url(http://lorempixel.com/200/200/cats/10);
+}
+.tile--self {
+  background-image: url(../assets/solo_pic.png);
+}
+
+.tile-group:nth-of-type(odd) .tile:nth-of-type(odd) {
+  border: 7px #DFDFDF solid;
+}
+.tile-group:nth-of-type(odd) .tile:nth-of-type(even) {
+  background-color: #DFDFDF;
+}
+.tile-group:nth-of-type(odd) .tile:last-of-type {
+  visibility: hidden;
+}
+
+.tile-group:nth-of-type(even) .tile:nth-of-type(even) {
+  border: 7px #DFDFDF solid;
+}
+.tile-group:nth-of-type(even) .tile:nth-of-type(odd) {
+  background-color: #EEE;
+}
+.tile-group:nth-of-type(even) .tile:first-of-type {
+  visibility: hidden;
+}
+
+@media (min-width: 1050px) {
+  .tile-group {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .tile-group .tile {
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+  }
+}
+@media (max-width: 700px) {
+  .tile-group {
+    width: 690px;
+    margin: 0 auto;
+  }
+
+  .tile-group .tile {
+    width: 17%;
+    height: calc(0.17 * 690px);
+    margin: 5px;
+    padding: calc(30px * 0.17);
+  }
+}
+body {
+  background-color: #FFFFFF;
+  margin: 0px auto 0px;
+  font-size: 30px;
+  font-family: 'Dosis', sans-serif;
+  color: #458FB3;
+}
+
+footer {
+  background-color: #143748;
+  color: #458FB3;
+  height: 20vh;
+  width: 100vw;
+}
+
+h1 {
+  font-family: 'Brusher', sans-serif;
+  font-size: 300%;
+  padding-left: 50px;
+}
+
+p {
+  padding: 0px 20px;
+  text-indent: 20px;
+}
+
+.masthead {
+  padding-top: 80px;
+  color: #458FB3;
+  height: 500px;
+  width: 100vw;
+  background: linear-gradient(rgba(64, 91, 96, 0.7), rgba(103, 115, 110, 0.2)), url(http://lorempixel.com/g/1370/580/city/4);
+  box-shadow: 0px 2px 40px rgba(10, 14, 13, 0.75);
+}
+.masthead__title {
+  margin: 100px auto 0px;
+  font-size: 150px;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Brusher', sans-serif;
+  box-sizing: border-box;
+}
+.masthead__tag-line {
+  text-align: center;
+  font-size: 40px;
+}
+.masthead__portrait {
+  margin: 0 auto 0;
+  display: block;
+}
+
+@font-face {
+  font-family: 'besom_2regular';
+  src: url(../assets/fonts/besom-free-font-webfont.eot);
+  src: url(../assets/fonts/besom-free-font-webfont.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/besom-free-font-webfont.woff2) format("woff2"), url(../assets/fonts/besom-free-font-webfont.woff) format("woff"), url(../assets/fonts/besom-free-font-webfont.ttf) format("truetype"), url(../assets/fonts/besom-free-font-webfont.svg#besom_2regular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brusher';
+  src: url(../assets/fonts/Brusher.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.plain-list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=main.css.map */

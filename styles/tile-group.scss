@@ -1,0 +1,54 @@
+.tile-group:nth-of-type(odd) {
+  .tile:nth-of-type(odd) {
+    border: 7px $odd-tile-border solid;
+  }
+
+  .tile:nth-of-type(even) {
+    background-color: $even-tile-background;
+  }
+
+  .tile:last-of-type {
+    visibility: hidden;
+  }
+}
+
+.tile-group:nth-of-type(even) {
+  .tile:nth-of-type(even) {
+    border: 7px $odd-tile-border solid;
+  }
+
+  .tile:nth-of-type(odd) {
+    background-color: $odd-tile-background;
+  }
+
+  .tile:first-of-type {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1050px) {
+  .tile-group {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .tile-group .tile {
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tile-group {
+    width: 690px;
+    margin: 0 auto;
+  }
+
+  .tile-group .tile {
+    width: 17%;
+    height: calc(0.17 * 690px);
+    margin: 5px;
+    padding: calc(30px * 0.17)
+  }
+}

@@ -1,0 +1,26 @@
+body {
+    background-color: $background;
+    margin: 0px auto 0px;
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    color: $primary-font-color;
+}
+
+footer {
+    background-color: $footer;
+    color: $primary-font-color;
+    height: 20vh;
+    width: 100vw;
+}
+
+h1 {
+    font-family: 'Brusher', sans-serif;
+    font-size: 300%;
+    padding-left: 50px;
+}
+
+p {
+    padding: 0px 20px;
+    text-indent: 20px;
+
+}
