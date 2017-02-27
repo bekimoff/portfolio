@@ -1,5 +1,6 @@
 $(window).scroll(function() {
-    if ($(window).scrollTop() >= 510) {
+    console.log(document.querySelector('.masthead').clientHeight);
+    if ($(window).scrollTop() >= document.querySelector('.masthead').clientHeight) {
         $('nav').removeClass('before');
         $('nav').addClass('after');
 

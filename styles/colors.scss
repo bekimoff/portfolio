@@ -1,17 +1,17 @@
 $header: linear-gradient(
-            rgba(64, 91, 96, 0.7),
-            rgba(103, 115, 110, 0.2)
+            rgba(69,143,179, 0.5),
+            rgba(20,55,72, 0.4)
     );
 $background: #FFFFFF;
-$primary-font-color: #458FB3;
-$secondary-font-color: #143748;
+$primary-font-color: #143748;
+$secondary-font-color: #458FB3;
 $shadow-color: rgba(10, 14, 13, 0.75);
 $footer: #143748;
 $inner-box-border: #143748;
 $outer-box-border: #458FB3;
 
 // tile colors
-$odd-tile-border: #DFDFDF;
+$odd-tile-border: #143748;
 $odd-tile-background: #EEE;
-$even-tile-border: #143748;
+$even-tile-border: #458FB3;
 $even-tile-background: #DFDFDF;
